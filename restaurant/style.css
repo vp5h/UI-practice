@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+header{
+    background-image: url(./bg.png);
+    background-size: cover;
+    height: 100vh;
+}
+.container{    
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+}
+
+nav{
+    padding: 1rem;
+}
+
+.pre-nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 0rem 1rem;
+
+}
+nav ul{
+    list-style-type:none ;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+nav li{
+    flex: 1
+}
+
+
+
+nav li a{
+    background-color: #2D99A4;
+    padding: 1rem 2rem;
+    display: block;
+    text-align: center;
+    
+}
+
+nav a.active{
+    background-color: #fff;
+    color: #2D99A4;
+    font-weight: bold;
+}
+
+nav a.highlight{
+    background-color: #026E78;
+    color: #fff;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    color: #026E78;
+    font-weight: bold;
+
+}
+
+nav a:hover{
+    opacity: 0.9;
+}
+
+.content{
+    font-size: 1.5rem;
+    /* background-color: tomato; */
+    display: flex;
+    flex: 1;
+    padding: 0rem 1rem;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.content .white-link{
+    background-color: #fff;
+    color: #026E78;
+    width: fit-content;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.content .teal-link{
+    background-color: #2D99A4;
+    color: #fff;
+    width: fit-content;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+.content h1{
+    color: #fff;
+    display: inline-block;
+    padding: .2rem;
+    font-weight: 200;
+    background-color: #026E78;
+    width: fit-content;
+}
+@media screen and (max-width: 768px) {
+    .pre-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+}
